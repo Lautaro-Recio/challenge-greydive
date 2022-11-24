@@ -19,10 +19,10 @@ const PregsContainer=({db, dbNum}) => {
     
         <>
             <p className="mt-5 p-5 text-orange-300 font-bold">{db[dbNum].escenario}</p>
-                    <div className="text-center rounded-lg  text-white border-orange-300 border-2 mx-40 p-5 " >
+                    <div className="text-center rounded-lg  text-white border-orange-300 border-2 md:mx-40 mx-3 p-5 " >
                         <p  className="mt-3  text-orange-300 font-bold text-2xl">Tarea {preg+1} de {db[dbNum].preguntas.length} </p>
                         <p className="mt-3">{db[dbNum].preguntas[preg].texto}</p>
-                            <div className="block h-32 p-5 ">
+                            <div className="block md:h-32 h-40 p-5 ">
                                 {
                                     db[dbNum].preguntas[preg].tipoTarea === "opinionScale5" ? 
                                         <Botones habilitar={habilitar}/>

@@ -11,7 +11,7 @@ const AppContainer=({dbNum}) => {
             <div className=" text-center  " key={db[dbNum].cliente}>
                 <h1 className="text-center text-5xl font-bold text-white  ">{db[dbNum].cliente}</h1>
                 <Video dbNum={dbNum}/>                
-                <p  className="p-10 text-white whitespace-pre-line"> {procesado} </p>
+                <p  className="md:p-10 p-2 text-white whitespace-pre-line"> {procesado} </p>
                 <PregsContainer db={db} dbNum={dbNum}/>
             </div>
         </>
